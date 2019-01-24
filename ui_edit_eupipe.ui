@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditEupipe</class>
+ <widget class="QDialog" name="EditEupipe">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>848</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_unific_id">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>56</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>識別碼</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_start">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>96</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>起點編號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_end">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>136</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>終點編號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_unific_up">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>176</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>來源識別碼</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_admin_unit">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>216</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>管理單位</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_unific_pipe">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>256</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>管線編號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_size">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>296</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>管徑寬度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_high">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>336</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>管徑高度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_unit">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>16</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>尺寸單位</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_long">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>涵管條數</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_mtr">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>管種材料</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_min_depth">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>最小埋管深</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_max_depth">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>176</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>最大埋管深</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_stat_depth">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>216</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>起點埋設深度(M)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_end_depth">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>256</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>終點埋設深度(M)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_saddle_dist">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>分水鞍道路邊距</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_dist_ref">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>道路邊距參考點</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_bury_date">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>16</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>埋設日期</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_oper_phase">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>作業區分</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_length">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>管線長度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_type">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>管線型態</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_status">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>176</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>存在狀態</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_apply_code">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>216</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>申裝案號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_water_no">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>16</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>水號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_trans_sub">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>256</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>輸送物質</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_use_stat">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>使用狀態</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_geolength">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>幾何長度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_mode">
+   <property name="geometry">
+    <rect>
+     <x>552</x>
+     <y>376</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>測量註記</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_const_unit">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>376</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>監造單位</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pipe_doc">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>416</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>超連結</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_remark">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>470</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>備註說明</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97xs">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>540</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>端點1 位置Ｘ坐標(TWD97)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97ys">
+   <property name="geometry">
+    <rect>
+     <x>296</x>
+     <y>540</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>端點1 位置Ｙ坐標(TWD97)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97zs">
+   <property name="geometry">
+    <rect>
+     <x>568</x>
+     <y>540</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>端點1 高程(TWVD2001)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97xt">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>580</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>端點2 位置Ｘ坐標(TWD97)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97yt">
+   <property name="geometry">
+    <rect>
+     <x>296</x>
+     <y>580</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>端點2 位置Ｙ坐標(TWD97)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97zt">
+   <property name="geometry">
+    <rect>
+     <x>568</x>
+     <y>580</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>端點2 高程(TWVD2001)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_water_no">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>16</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>11</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_unific_id">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pipe_start">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>22</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pipe_end">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>22</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_unific_up">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>176</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>22</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_admin_unit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>216</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>7</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_unific_pipe">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>256</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>22</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pipe_size">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
+   </property>
+   <property name="placeholderText">
+    <string>1234</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pipe_high">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
+   </property>
+   <property name="placeholderText">
+    <string>1234</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pipe_long">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>1</number>
+   </property>
+   <property name="placeholderText">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pipe_mtr">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_min_depth">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_max_depth">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>176</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_start_depth">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>216</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_end_depth">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>256</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_saddle_dist">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_dist_ref">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_bury_date">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>16</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+   <property name="placeholderText">
+    <string>yyyymmdd</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pipe_length">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>12345.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_apply_code">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>216</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_trans_sub">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>256</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_geolength">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_pipe_unit">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>16</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>0 mm</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 inch</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2 cm</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3 m</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_oper_phase">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>0 新建</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 更動</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2 刪除</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_pipe_type">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>0 架空</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 地下</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2 共同管溝</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_pipe_status">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>176</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>0 廢棄</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 現存</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2 設計完成</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3 施工中</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_use_stat">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>0 使用</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 停用</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_pipe_mode">
+   <property name="geometry">
+    <rect>
+     <x>696</x>
+     <y>376</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>0 未測量坐標</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1 經測量坐標</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2 測量後合理化調整</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_const_unit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>376</y>
+     <width>424</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>30</number>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_pipe_doc">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>416</y>
+     <width>712</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_remark">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>470</y>
+     <width>712</width>
+     <height>61</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97xs">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>540</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>12345678.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97ys">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>540</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>12345678.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97zs">
+   <property name="geometry">
+    <rect>
+     <x>728</x>
+     <y>540</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97xt">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>580</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>12345678.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97yt">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>580</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>12345678.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97zt">
+   <property name="geometry">
+    <rect>
+     <x>728</x>
+     <y>580</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOK">
+   <property name="geometry">
+    <rect>
+     <x>304</x>
+     <y>656</y>
+     <width>120</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>確認</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCancel">
+   <property name="geometry">
+    <rect>
+     <x>424</x>
+     <y>656</y>
+     <width>120</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_depth_e">
+   <property name="geometry">
+    <rect>
+     <x>296</x>
+     <y>620</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>終點埋設深度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_depth_s">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>620</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_depth_e">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>620</y>
+     <width>104</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>1234.123</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_depth_s">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>620</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>起點埋設深度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

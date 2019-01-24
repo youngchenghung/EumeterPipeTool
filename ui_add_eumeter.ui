@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddEumeter</class>
+ <widget class="QDialog" name="AddEumeter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>768</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QComboBox" name="comboBox_unific_id">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>16</y>
+     <width>384</width>
+     <height>32</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_unific_id">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>16</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>識別碼</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_water_no">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>16</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>水號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_water_no">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>16</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>11</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_meter_yy">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>56</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>表號(年份)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_meter_yy">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_meter_no">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>56</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>表號(編號)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_meter_no">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>6</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_meter_mode">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>56</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>表號(口徑)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_meter_mode">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>56</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>13mm, A</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20mm, B</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>25mm, C</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>40mm, D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>50mm, E</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>80mm, F</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>100mm以上, G</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_work_area">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>96</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>抄表工作區</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_work_area">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_meter_type">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>96</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>總分表別</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_meter_type">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_meter_tag">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>96</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>口徑標籤</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_meter_tag">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>96</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>13</string>
+   </property>
+   <property name="maxLength">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_master">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_master">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>136</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>總表編號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_loc_9mark">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_loc_9mark">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>136</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>水表九宮格</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_nine_mark_dsc">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>136</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>水表位置備註</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_nine_mark_dsc">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>136</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_bh_loc">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>176</y>
+     <width>96</width>
+     <height>112</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>分表排列</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_vila_name">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_dist_name">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>296</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>鄉鎮</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vila_name">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>296</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>村里</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_county_name">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>296</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>縣市</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_dist_name">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_county_name">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>296</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_road">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>336</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>街路</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_road">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_lane">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>336</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>巷</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_section">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_section">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>336</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>段</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_lane">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>336</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_alley">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>376</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>弄</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_addr_no">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>376</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_addr_no">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>376</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_alley">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>376</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_floor">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>376</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_floor">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>376</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>樓</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_add_2a">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>416</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>10</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_add_2a">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>416</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>地址附加資料</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_cust_name">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>416</y>
+     <width>384</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cust_name">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>416</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>用戶姓名</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cstl_kind">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>456</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>狀態代號</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_cstl_kind">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>456</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_kind_desc">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>456</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>狀態名稱</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_kind_desc">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>456</y>
+     <width>384</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_empl_date">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>496</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_upd_date">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>496</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_acep_no">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>496</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>6</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_acep_no">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>496</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>申裝號碼</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_upd_date">
+   <property name="geometry">
+    <rect>
+     <x>512</x>
+     <y>496</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>資料更新日期</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_empl_date">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>496</y>
+     <width>96</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>裝置日期</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_67x">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>576</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>位置Ｘ坐標(TWD67)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97y">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>616</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>位置Ｙ坐標(TWD97)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_67x">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>576</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>000000.000</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_67y">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>576</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>0000000.000</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97y">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>616</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>0000000.000</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_67y">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>576</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>位置Ｙ坐標(TWD67)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_coord_97x">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>616</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>位置Ｘ坐標(TWD97)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_coord_97x">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>616</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>000000.000</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_rt_order2">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>536</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>抄表路順註記2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_rt_order1">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>536</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>6</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_rt_order1">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>536</y>
+     <width>152</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>抄表路順註記1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_rt_order2">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>536</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>6</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonOK">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>656</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>確認</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCancel">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>656</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit_bh_loc">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>176</y>
+     <width>632</width>
+     <height>112</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonUpdate">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>656</y>
+     <width>136</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>取得水籍資料</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
